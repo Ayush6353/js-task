@@ -14,9 +14,29 @@ code {
 .a_data{
   display: flex;
   flex-direction: column;
+  
+}
+.ul_m{
+  display: flex;
+ color: rgb(255, 0, 0);
 }
 .div_data{
   display: flex;
   flex-direction: row;
   margin-left: 1rem;
+}
+.btn{
+  margin-top: 5rem;
+  margin-left: 1rem;
+  height: 3rem;
+  width: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(251, 255, 0);
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 11px 0.5px rgba(0, 0, 0, 0.541);
+}
+.btn:hover{
+  background-color: transparent;
+  border: 3px solid rgb(251, 255, 0);
 }

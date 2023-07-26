@@ -15,13 +15,13 @@ const HeadTaill = () => {
 
   return (
     <div>
-      <button onClick={() => addData("Head")}>Head</button>
-      <button onClick={() => addData("Tail")}>Tail</button>
+      <button className="btn" onClick={() => addData("Head")}>Head</button>
+      <button className="btn" onClick={() => addData("Tail")}>Tail</button>
       <div className="div_data">
         {data.map((item, index) => (
           <div className="a_data">
           {item.map((item, index) => (
-          <ul key={index}>{item}</ul>
+          <ul className="ul_m" key={index}>{item}</ul>
         ))}
           </div>
         ))}
