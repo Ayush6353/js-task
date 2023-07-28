@@ -4,6 +4,8 @@ const ArrayLength = () => {
 
   let vl = 1;
   const count = array.filter((e) => e === vl).length;
+  const marr = {")":1,"(":1,"]":2,"[":2,"}":3,"{":3 };
+  console.log(marr)
   const index = find.indexOf(5);
   return (
     console.log(index,"length find"),
