@@ -33,6 +33,9 @@ export default function BoxChart() {
             xaxis: {
                 categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
 
+            },
+            yaxis: {
+                show: false,
             }
         },
         series: [
@@ -173,7 +176,7 @@ export default function BoxChart() {
                 name: "series-1",
                 group: "series1",
                 type: 'column',
-                data: [70, 40, 45, 50, 49]
+                data: [70, 40, 45, 50, 49,]
             },
             {
                 name: "series-2",
@@ -184,15 +187,28 @@ export default function BoxChart() {
             {
                 name: 'line',
                 type: 'line',
-                group: "series2",
+                group: "series2 series1",
                 data: [30, 65, 45, 40, 65]
             },
+            
         ],
+       
         options: {
             colors: ["#895BF1", "#895BF1", "#3BB964"],
             chart: {
                 height: 350,
                 type: 'line',
+                dropShadow: {
+                    enabled: true,
+                    color: '#000',
+                    top: 1,
+                    left: 1,
+                    blur: 3,
+                    opacity: 0.2
+                },
+                toolbar: {
+                    show: false,
+                },
             },
             markers: {
                 size: 7,
@@ -210,7 +226,8 @@ export default function BoxChart() {
                 xaxis: {
                     lines: {
                         show: true
-                    }
+                    },
+                   
                 },
                 yaxis: {
                     lines: {
@@ -218,8 +235,13 @@ export default function BoxChart() {
                     }
                 },
             },
+            
             xaxis: {
-                categories: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5"]
+                tickPlacement: 'on',
+                categories: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5"],
+            },
+            yaxis: {
+                show: false,
             },
             plotOptions: {
                 bar: {
