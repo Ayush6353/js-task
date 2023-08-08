@@ -13,6 +13,8 @@ import Boxs from "./task/Boxs";
 import HeadTaill from "./task/HeadTaill";
 import Stepper from "./StepperH";
 import StepperH from "./StepperH";
+import FormikAndYup from "./task/FormikAndYup";
+import ModalBox from "./task/ModelBox";
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
         <Route path="/show" element={<ShowData/>}/>
       </Routes>
       </BrowserRouter> */}
-      <StepperH/>
+      {/* <StepperH/> */}
+      {/* <FormikAndYup/> */}
+      <ModalBox/>
       {/* <Boxs/>
       <BoxChart/> */}
       {/* <AxiosApiNews/> */}
