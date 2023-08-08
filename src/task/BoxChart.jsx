@@ -188,7 +188,7 @@ export default function BoxChart() {
                 name: 'line',
                 type: 'line',
                 group: "series2 series1",
-                data: [30, 65, 45, 40, 65]
+                data: [30, 65, 45, 40, 65,]
             },
             
         ],
