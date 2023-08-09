@@ -15,6 +15,8 @@ import Stepper from "./StepperH";
 import StepperH from "./StepperH";
 import FormikAndYup from "./task/FormikAndYup";
 import ModalBox from "./task/ModelBox";
+import BillingAndPlans from "./task/BillingAndPlans";
+import ModalAddBox from "./task/ModalAddBox";
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
       </BrowserRouter> */}
       {/* <StepperH/> */}
       {/* <FormikAndYup/> */}
-      <ModalBox/>
+      {/* <ModalBox/> */}
+      {/* <BillingAndPlans/> */}
+    <ModalAddBox/>
       {/* <Boxs/>
       <BoxChart/> */}
       {/* <AxiosApiNews/> */}
