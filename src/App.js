@@ -17,6 +17,7 @@ import FormikAndYup from "./task/FormikAndYup";
 import ModalBox from "./task/ModelBox";
 import BillingAndPlans from "./task/BillingAndPlans";
 import ModalAddBox from "./task/ModalAddBox";
+import ChangeBillingMethod from "./task/ChangeBillingMethid";
 
 function App() {
   return (
@@ -30,10 +31,11 @@ function App() {
       </Routes>
       </BrowserRouter> */}
       {/* <StepperH/> */}
-      {/* <FormikAndYup/> */}
+      <FormikAndYup/>
       {/* <ModalBox/> */}
       {/* <BillingAndPlans/> */}
-    <ModalAddBox/>
+      {/* <ChangeBillingMethod/> */}
+    {/* <ModalAddBox/> */}
       {/* <Boxs/>
       <BoxChart/> */}
       {/* <AxiosApiNews/> */}

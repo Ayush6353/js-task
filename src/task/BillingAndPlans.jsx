@@ -3,8 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { Button, Grid, TextField } from '@material-ui/core';
-import { BorderRight } from '@mui/icons-material';
-import { border, borderRadius } from '@mui/system';
+
 
 export default function BillingAndPlans() {
     return (
