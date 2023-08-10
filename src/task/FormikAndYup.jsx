@@ -65,9 +65,7 @@ const [Alldata, setAllData] = useState([]);
                                 value={values.password}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
-
                             />
-
                         </Box>
 
                         <Button variant='contained' sx={{ width: "50%" }} type='submit'>Submit</Button>
