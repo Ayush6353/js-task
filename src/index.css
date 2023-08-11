@@ -19,7 +19,7 @@ code {
 
 .ul_m{
   display: flex;
- color: rgba(21, 0, 255, 0.598);
+ color: rgba(0, 0, 0, 0.935);
 }
 .div_data{
   display: flex;
@@ -34,10 +34,13 @@ code {
   border: none;
   border-radius: 0.5rem;
   background-color: rgb(251, 255, 0);
-  color: rgb(0, 0, 0);
-  box-shadow: 2px 2px 11px 0.5px rgba(21, 12, 93, 0.839);
+  color: rgba(0, 0, 0, 0.913);
+  box-shadow: 2px 2px 11px 0.5px rgba(4, 12, 95, 0.716);
 }
 .btn:hover{
   background-color: transparent;
   border: 3px solid rgb(251, 255, 0);
+}
+.Box2:hover{
+  border: 1px solid  rgb(19, 200, 109) ;
 }

@@ -44,10 +44,10 @@ export default function ModalAddBox() {
                     <TextField id="outlined-basic" label="Example:Kirklees Council" variant="outlined" style={{ width: '100%', bordeRadius: 10, marginTop: 5 }} />
                 </DialogContent>
                 <DialogActions style={{ display: 'flex', flexDirection: 'column', width: '100%', marginTop: 20 }}>
-                    <Button autoFocus onClick={handleClose} variant='contained' style={{ width: '30%', borderRadius: 10, color: 'white', backgroundColor: '#3949ab', }}>
+                    <Button autoFocus onClick={handleClose} variant='contained' style={{ width: '30%', borderRadius: 10, color: 'white', background: 'linear-gradient(0deg, white -100%, rgba(4, 12, 95, 0.716) 40%)' }}>
                         Create
                     </Button>
-                    <Button onClick={handleClose} color="black" autoFocus style={{ fontWeight: 'bold', marginTop: 20 }}>
+                    <Button onClick={handleClose} color="rgba(4, 12, 95, 0.716)" autoFocus style={{ fontWeight: 'bold', marginTop: 20 }}>
                         Cancel
                     </Button>
                 </DialogActions>

@@ -24,7 +24,7 @@ export default function BillingAndPlans() {
                                 </Grid>
                                 <Grid style={{ display: 'flex', justifyContent: 'space-around', padding: 15 }}>
                                     <Button variant='outlined' style={{ color: ' rgba(21, 0, 255, 0.598)', borderRadius: 10 }}>Cancel</Button>
-                                    <Button variant='contained' style={{ backgroundColor: ' rgba(21, 0, 255, 0.598)', color: 'white', borderRadius: 10 }}>Update</Button>
+                                    <Button variant='contained' style={{ background: 'linear-gradient(0deg, white -100%, rgba(4, 12, 95, 0.716) 40%)', color: 'white', borderRadius: 10 }}>Update</Button>
                                 </Grid>
                             </Container>
                         </Container>

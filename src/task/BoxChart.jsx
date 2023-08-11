@@ -72,6 +72,7 @@ export default function BoxChart() {
         ],
         options: {
             colors: ["#FEB760", "#938EF8", "#61DB2C", "#E30A08"],
+            
             chart: {
                 type: 'bar',
                 height: 350
@@ -94,6 +95,10 @@ export default function BoxChart() {
                 width: 6,
                 colors: ['transparent']
             },
+            legend: {
+                // show: false,
+                horizontalAlign: 'left', 
+              },
             xaxis: {
                 categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
             },

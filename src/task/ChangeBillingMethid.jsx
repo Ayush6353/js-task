@@ -116,7 +116,7 @@ class ChangeBillingMethod extends Component {
                             </div>
                         </Container>
                         <Grid style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 20 }}>
-                            <Button variant='contained' onClick={this.handleSaveChanges} style={{ width: '20vh', borderRadius: 10, color: 'white', backgroundColor: '#3949ab', }}>
+                            <Button variant='contained' onClick={this.handleSaveChanges} style={{ width: '20vh', borderRadius: 10, color: 'white', background: 'linear-gradient(0deg, white -100%, rgba(4, 12, 95, 0.716) 40%)' }}>
                                 Save Changes
                             </Button>
                         </Grid>

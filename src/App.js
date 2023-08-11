@@ -19,6 +19,7 @@ import BillingAndPlans from "./task/BillingAndPlans";
 import ModalAddBox from "./task/ModalAddBox";
 import ChangeBillingMethod from "./task/ChangeBillingMethid";
 import ChangeSubscription from "./task/ChangeSubscription";
+import LoopTask from "./task/LoopTask";
 
 function App() {
   return (
@@ -31,13 +32,15 @@ function App() {
         <Route path="/show" element={<ShowData/>}/>
       </Routes>
       </BrowserRouter> */}
+      <LoopTask />
       {/* <StepperH/> */}
       {/* <FormikAndYup/> */}
       {/* <ModalBox/> */}
       {/* <BillingAndPlans/> */}
       <ChangeSubscription/>
+      
       {/* <ChangeBillingMethod/> */}
-    {/* <ModalAddBox/> */}
+      {/* <ModalAddBox/> */}
       {/* <Boxs/> */}
       {/* <BoxChart/> */}
       {/* <AxiosApiNews/> */}
