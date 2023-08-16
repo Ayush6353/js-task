@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, makeStyles, useMediaQuery, useTheme } from '@material-ui/core';
@@ -16,13 +16,25 @@ const useStyles = makeStyles({
         }
     }
 })
+
+const getlocalStore = () => {
+    let newgetData = localStorage.getItem('ayush');
+    if (newgetData) {
+        return JSON.parse(localStorage.getItem('ayush'));
+    } else {
+        return [];
+    }
+}
+
+
 export default function ChangeSubscription() {
-    const [formValues, setFormValues] = useState([]);
+    const [formValues, setFormValues] = useState(getlocalStore());
     const [value, setValue] = React.useState(0);
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const theme = useTheme();
     const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -35,8 +47,13 @@ export default function ChangeSubscription() {
         name: '',
         rating: "",
         file: '',
-        color:'',
+        color: '',
     };
+
+
+    useEffect(() => {
+        localStorage.setItem('ayush', JSON.stringify(formValues));
+    }, [formValues])
 
     const { values, handleBlur, handleChange, handleReset, handleSubmit } = useFormik({
         initialValues: initialValues,
@@ -51,7 +68,7 @@ export default function ChangeSubscription() {
     return (
         <React.Fragment>
 
-            <div style={{ height: '100vh', backgroundColor: '' }}>
+            <div style={{ marginTop: 100, height: '100vh', backgroundColor: '' }}>
 
                 <Dialog
                     fullScreen={fullScreen}
@@ -182,7 +199,7 @@ export default function ChangeSubscription() {
                                                 <img
                                                     src={`${val.file}?w=248&fit=crop&auto=format`}
                                                     srcSet={`${val.file}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                                    style={{ height: 70, width: 70,borderRadius:40 }}></img>
+                                                    style={{ height: 70, width: 70, borderRadius: 40 }}></img>
                                             </Grid>
                                             <Rating name="read-only" value={val.rating} readOnly />
                                             <Grid style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
